@@ -1,2 +1,2 @@
 # tcpip_stack
-Implement your own TCP IP Stack
+Implementing my own TCP IP Stack
