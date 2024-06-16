@@ -53,6 +53,11 @@ typedef enum{
 #define UNSET_BIT(n, pos)       (n = n & ((1 << pos) ^ 0xFFFFFFFF))
 #define SET_BIT(n, pos)     (n = n | 1 << pos)
 
+#define BAD_PARAMS_ERROR(msg) \
+  printf("Bad arguments at line %d in file %s\n",__LINE__, __FILE__)
+
+
+
 void apply_mask(char *prefix, char mask, char *str_prefix);
 
 #endif /* __UTILS__ */

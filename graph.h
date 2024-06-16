@@ -35,6 +35,8 @@ struct node_ {
     char node_name[NODE_NAME_SIZE];
     interface_t *intf[MAX_INTF_PER_NODE];
     glthread_t graph_glue;
+    unsigned int udp_port_num;
+    int udp_port_sock;
     node_nw_prop_t node_nw_prop;
 };
 GLTHREAD_TO_STRUCT(graph_glue_to_node, node_t, graph_glue);
